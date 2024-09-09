@@ -1,0 +1,7 @@
+logging:
+  level:
+    root: debug
+    top.hyzhu.springboot.thymleeaf: debug
+spring:
+  thymeleaf:
+    cache: false
