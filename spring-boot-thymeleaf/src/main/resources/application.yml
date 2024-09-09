@@ -1,6 +1,6 @@
 logging:
   level:
-    root: debug
+    root: info
     top.hyzhu.springboot.thymleeaf: debug
 spring:
   thymeleaf:
