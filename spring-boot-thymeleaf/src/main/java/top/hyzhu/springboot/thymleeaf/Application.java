@@ -22,7 +22,7 @@ public class Application {
         String greeting = "Hello!!!! " + name + "!";
         return greeting;
     }
-    // 迭代计算阶乘
+//     迭代计算阶乘
     @GetMapping("/factorial")
     public Integer factorial(int n) {
         if (n < 0) {
@@ -34,15 +34,5 @@ public class Application {
         }
         return result;
     }
-
-
-
-
-
-
-
-
-
-
 }
 
