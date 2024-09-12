@@ -3,7 +3,7 @@
 #    name: ./logs/my-logs.log
 #  logback:
 #    rolling policy:
-#      max-file-size: 20MB
+#      max-file-size: 1KB
 #      max-history: 30
 #  pattern:
 #    console: '%yellow(%d{HH:mm:ss}) %green([%thread]) %highlight(%-5level) %boldMagenta(%logger{10}) - %cyan(%msg%n)'
