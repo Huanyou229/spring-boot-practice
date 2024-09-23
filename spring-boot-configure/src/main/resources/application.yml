@@ -1,0 +1,75 @@
+#family:
+#  family-name: "happy family"
+#  father: ${father.name:zhangsang}
+#  mother: "Rose"
+#  child: "Tom"
+#  age: ${random.int(1,30)}
+#father:
+#  name: "张三"
+
+#server:
+#  host: "localhost"
+#  port: 8080
+#  context-path: "/api"
+#
+#Person:
+#  first-name: ${first-name.name:John}
+#  last-name: ${last-name.name:Doe}
+#  age: ${random.int(20,50)}
+#  id: ${random.uuid}
+#  phone: ${phone.number:1234567890}
+#first-name:
+#  name: "李四"
+#last-name:
+#  name: "王五"
+#phone:
+#  number: 15896153901
+
+student:
+  name: 张小飞
+  age: 20
+  happy: true
+  birth: 2004/01/01
+  map: {k1: v1, k2: v2}
+  list:
+    - code
+    - read
+    - music
+  dog:
+    name: 虎子
+    age: 11
+
+db:
+  url: jdbc:mysql://127.0.0.1:3306/spring_boot?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiqueries=true
+  username: root
+  password: 123456
+  driver-class-name: com.mysql.cj.jdbc.Driver
+#
+#jwt:
+#  secret: helloworld
+#  expiration: 3600000
+
+spring:
+  web:
+    resources:
+      static-locations: classpath:/static/,file:${file.upload-path}
+  servlet:
+    multipart:
+      max-file-size: 10485760 # 上传⽂件⼤⼩限定为10M
+      max-request-size: 10485760
+  mail:
+    host: smtp.qq.com
+    username: 2499669698@qq.com
+    password: hhgrshmvjsztdide
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+
+custom:
+  qrcode:
+    content: "https://www.baidu.com"
+  log:
+    level: "INFO"
+  backup:
+    location: /E:/Projects/spring-boot-practice/spring-boot-configure/src/main/resources/log/backup.log
+
