@@ -17,6 +17,8 @@
         <module>spring-boot-quickstart</module>
         <module>spring-boot-thymeleaf</module>
         <module>spring-boot-logging</module>
+        <module>my-zhihu-api</module>
+        <module>spring-boot-configure</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -33,6 +35,20 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!-- Spring Boot DevTools -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
 
