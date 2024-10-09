@@ -4,3 +4,4 @@
 - spring-boot-thymeleaf: 调试和Thymeleaf 模板引擎学习
 - spring-boot-logging: 日志管理学习
 - spring-boot-configure: 配置管理学习
+- spring-boot-database: JPA 与 MyBatis 起步练习
