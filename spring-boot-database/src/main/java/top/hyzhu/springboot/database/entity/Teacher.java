@@ -5,25 +5,18 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
-import java.util.List;
-
 /**
  * @Author: zhy
- * @Description: Student
- * @Date: 2024-10-08 15:29
+ * @Description: Teacher
+ * @Date: 2024-10-12 14:02
  **/
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Student {
-    private Integer studentId;
+public class Teacher {
+    private Integer teacherId;
+    private String teacherName;
     private Integer clazzId;
-    private String studentName;
-    private String hometown;
-    private LocalDate birthday;
     private Clazz clazz;
-    private List<Course> courses;
 }

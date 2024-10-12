@@ -4,6 +4,7 @@ import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import top.hyzhu.springboot.database.entity.Course;
 import top.hyzhu.springboot.database.entity.Student;
 
 import java.time.LocalDate;
@@ -98,5 +99,13 @@ class StudentMapperTest {
         Student student = Student.builder().hometown("州").build();
         List<Student> students = studentMapper.selectByDynamicSql(student);
         students.forEach(System.out::println);
+    }
+
+    @Test
+    void getStudent(){
+        Student student = studentMapper.getStudent(1001);
+        log.info("{},{}",student.getStudentName(),student.getHometown());
+        List<Course> courses = student.getCourses();
+        courses.forEach(course -> log.info("{},{}",course.getCourseId(),course.getCourseName()));
     }
 }

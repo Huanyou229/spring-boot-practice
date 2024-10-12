@@ -26,4 +26,5 @@ public interface StudentMapper {
 
     List<Student> selectByDynamicSql(Student student);
 
+    Student getStudent(int studentId);
 }
