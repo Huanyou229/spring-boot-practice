@@ -7,4 +7,4 @@
 - spring-boot-database: JPA 与 MyBatis 起步练习
 - qa-system : 实践： 一个简易的问答系统
 - spring-boot-mp: MyBatis Plus 的学习
-   
+- spring-boot-exception: 全局统一异常处理的学习

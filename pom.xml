@@ -19,6 +19,7 @@
         <module>spring-boot-logging</module>
         <module>my-zhihu-api</module>
         <module>spring-boot-configure</module>
+        <module>spring-boot-exception</module>
     </modules>
     <packaging>pom</packaging>
 
