@@ -1,13 +1,12 @@
 package top.hyzhu.qasystem.controller;
 
 import jakarta.annotation.Resource;
+import jakarta.servlet.http.HttpSession;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import top.hyzhu.qasystem.Service.QuestionService;
 import top.hyzhu.qasystem.entity.Question;
-
-import java.util.List;
-
 /**
  * @Author: zhy
  * @Description: QuestionController
@@ -20,19 +19,18 @@ public class QuestionController {
     @Resource
     private QuestionService questionService;
 
-    @GetMapping("/all")
-    public ResponseEntity<List<Question>> getAllQuestions() {
-        return ResponseEntity.ok(questionService.getAllQuestions());
-    }
-
-    @GetMapping("/{id}")
-    public ResponseEntity<Question> getQuestionById(@PathVariable Long id) {
-        return ResponseEntity.ok(questionService.getQuestionById(id));
-    }
-
     @PostMapping("/create")
-    public ResponseEntity<?> createQuestion(@RequestBody Question question) {
+    public ResponseEntity<?> createQuestion(@RequestBody Question question, HttpSession session) {
+        // 检查用户是否已登录
+        Long userId = (Long) session.getAttribute("userId");
+        if (userId == null) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("请先登录才能提交问题。");
+        }
+
+        // 设置用户 ID
+        question.setUserId(userId);
         questionService.createQuestion(question);
-        return ResponseEntity.ok("Question created successfully");
+
+        return ResponseEntity.ok("问题创建成功！");
     }
 }

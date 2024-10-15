@@ -10,7 +10,5 @@ import java.util.List;
  * @Date: 2024-10-12 21:32
  **/
 public interface QuestionService {
-    List<Question> getAllQuestions();
-    Question getQuestionById(Long id);
     void createQuestion(Question question);
 }

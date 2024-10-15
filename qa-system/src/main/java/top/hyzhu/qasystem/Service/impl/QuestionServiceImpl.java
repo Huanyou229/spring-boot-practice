@@ -6,8 +6,6 @@ import top.hyzhu.qasystem.Service.QuestionService;
 import top.hyzhu.qasystem.entity.Question;
 import top.hyzhu.qasystem.mapper.QuestionMapper;
 
-import java.util.List;
-
 /**
  * @Author: zhy
  * @Description: QuestionServiceImpl
@@ -18,16 +16,6 @@ public class QuestionServiceImpl implements QuestionService {
 
     @Resource
     private QuestionMapper questionMapper;
-
-    @Override
-    public List<Question> getAllQuestions() {
-        return questionMapper.findAll();
-    }
-
-    @Override
-    public Question getQuestionById(Long id) {
-        return questionMapper.findById(id);
-    }
 
     @Override
     public void createQuestion(Question question) {

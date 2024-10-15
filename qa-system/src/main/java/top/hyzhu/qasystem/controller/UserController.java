@@ -1,10 +1,12 @@
 package top.hyzhu.qasystem.controller;
 
 import jakarta.annotation.Resource;
+import jakarta.servlet.http.HttpSession;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import top.hyzhu.qasystem.Service.UserService;
+import top.hyzhu.qasystem.dto.LoginRequest;
 import top.hyzhu.qasystem.entity.User;
 import java.time.LocalDateTime;
 
@@ -35,12 +37,14 @@ public class UserController {
 
 
     @PostMapping("/login")
-    public ResponseEntity<String> login(@RequestParam String username, @RequestParam String password) {
+    public ResponseEntity<String> login(@RequestBody LoginRequest loginRequest, HttpSession session) {
         // 调用 UserService 的 login 方法
-        User loggedInUser = userService.login(username, password);
+        User loggedInUser = userService.login(loginRequest.getUsername(), loginRequest.getPassword());
 
         // 检查用户是否登录成功
         if (loggedInUser != null) {
+            // 将用户 ID 保存到会话中
+            session.setAttribute("userId", loggedInUser.getId());
             return ResponseEntity.ok("登录成功！");
         } else {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("用户名或密码无效。");
