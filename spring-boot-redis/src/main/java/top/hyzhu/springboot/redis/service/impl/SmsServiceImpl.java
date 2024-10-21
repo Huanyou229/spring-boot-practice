@@ -35,10 +35,10 @@ public class SmsServiceImpl implements SmsService {
         int code = CommonUtils.generateCode();
         redisCache.set(RedisKeys.getSmsKey(phone), code, 60);
         // 调用内部方法发送短信
-        boolean result = send(phone, code);
-        if (result) {
-            log.info(" ============= 短信发送成功 ============= ");
-        }
+//        boolean result = send(phone, code);
+//        if (result) {
+//            log.info(" ============= 短信发送成功 ============= ");
+//        }
     }
 
     /**
