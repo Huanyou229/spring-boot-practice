@@ -8,3 +8,4 @@
 - qa-system : 实践： 一个简易的问答系统
 - spring-boot-mp: MyBatis Plus 的学习
 - spring-boot-exception: 全局统一异常处理的学习
+- spring-boot-redis : Redis 的学习

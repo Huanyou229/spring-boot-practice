@@ -9,7 +9,7 @@ package top.hyzhu.springboot.exception.service;
 import org.springframework.stereotype.Service;
 import top.hyzhu.springboot.exception.exception.ServerException;
 
-/**
+/** 
  * @description 通⽤异常处理逻辑
  **/
 @Service

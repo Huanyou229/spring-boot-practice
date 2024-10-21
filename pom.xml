@@ -20,6 +20,7 @@
         <module>my-zhihu-api</module>
         <module>spring-boot-configure</module>
         <module>spring-boot-exception</module>
+        <module>spring-boot-redis</module>
     </modules>
     <packaging>pom</packaging>
 
