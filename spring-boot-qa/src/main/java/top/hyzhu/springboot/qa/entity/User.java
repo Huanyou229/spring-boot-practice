@@ -2,6 +2,7 @@ package top.hyzhu.springboot.qa.entity;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
@@ -15,6 +16,7 @@ import java.time.LocalDateTime;
 
 
 @Data
+@TableName("user")
 public class User {
 
     private Long id;

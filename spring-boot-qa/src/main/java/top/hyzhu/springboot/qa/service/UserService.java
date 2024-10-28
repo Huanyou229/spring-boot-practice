@@ -14,8 +14,6 @@ import top.hyzhu.springboot.qa.mapper.QuestionMapper;
 import top.hyzhu.springboot.qa.mapper.UserMapper;
 import top.hyzhu.springboot.qa.utils.JwtUtil;
 
-
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -43,7 +41,7 @@ public class UserService extends ServiceImpl<UserMapper, User> {
             String token = JwtUtil.generateToken(username);
 
             // 将 token 存储到 Redis，设置过期时间
-            redisTemplate.opsForValue().set("token:" + username, token, 1, TimeUnit.HOURS);
+            redisTemplate.opsForValue().set("token:" + username, token, 1, TimeUnit.DAYS);
 
             return token;
         } else {

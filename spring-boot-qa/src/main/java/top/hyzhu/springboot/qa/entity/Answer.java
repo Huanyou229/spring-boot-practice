@@ -3,6 +3,7 @@ package top.hyzhu.springboot.qa.entity;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -15,6 +16,7 @@ import java.util.List;
  **/
 
 @Data
+@TableName("answer")
 public class Answer {
     private Long id;
     private Long questionId;

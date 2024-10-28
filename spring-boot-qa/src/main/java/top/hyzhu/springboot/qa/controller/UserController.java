@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 import top.hyzhu.springboot.qa.entity.User;
 import top.hyzhu.springboot.qa.service.UserService;
 import top.hyzhu.springboot.qa.utils.JwtUtil;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -87,7 +86,7 @@ public class UserController {
     }
 
     // 提出问题接口
-    @PostMapping("/questions")
+    @PostMapping("/addQuestions")
     public ResponseEntity<Map<String, Object>> createQuestion(@RequestBody Map<String, String> params,
                                                               @RequestHeader("Authorization") String token) {
         // 从 token 获取用户 ID
@@ -101,19 +100,30 @@ public class UserController {
         return ResponseEntity.ok(response);
     }
 
-    // 回答问题接口
-    @PostMapping("/answers")
-    public ResponseEntity<Map<String, Object>> createAnswer(@RequestBody Map<String, String> params,
+    @PostMapping("/addAnswers/{questionId}")
+    public ResponseEntity<Map<String, Object>> createAnswer(@PathVariable Long questionId,
+                                                            @RequestBody Map<String, String> params,
                                                             @RequestHeader("Authorization") String token) {
-        Long userId = getUserIdFromToken(token); // 从 token 获取用户 ID
-        Long questionId = Long.valueOf(params.get("questionId"));
-        String content = params.get("content");
+        try {
+            Long userId = getUserIdFromToken(token); // 从 token 获取用户 ID
+            String content = params.get("content");
+            // 日志记录
+            System.out.println("接收到的内容: " + content);
+            System.out.println("用户 ID: " + userId);
 
-        boolean result = userService.createAnswer(questionId, content, userId);
-        Map<String, Object> response = new HashMap<>();
-        response.put("message", result ? "回答提交成功" : "回答提交失败");
-        return ResponseEntity.ok(response);
+            boolean result = userService.createAnswer(questionId, content, userId);
+            Map<String, Object> response = new HashMap<>();
+            response.put("message", result ? "回答提交成功" : "回答提交失败");
+            return ResponseEntity.ok(response);
+        } catch (Exception e) {
+            // 记录异常
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(Map.of("message", "服务器内部错误"));
+        }
     }
+
+
 
     // 从 token 中获取用户 ID
     private Long getUserIdFromToken(String token) {

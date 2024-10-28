@@ -6,6 +6,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import top.hyzhu.springboot.qa.entity.Question;
 import top.hyzhu.springboot.qa.service.QuestionService;
+
+import java.util.List;
+
 /**
  * @Author: zhy
  * @Description:
@@ -34,4 +37,15 @@ public ResponseEntity<?> getQuestionDetails(@PathVariable Long id) {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("服务器内部错误");
     }
 }
+
+    // 查询所有问题及提问者信息
+    @GetMapping
+    public ResponseEntity<?> getAllQuestionsWithUsers() {
+        try {
+            List<Question> questions = questionService.getAllQuestionsWithUsers();
+            return ResponseEntity.ok(questions);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("服务器内部错误");
+        }
+    }
 }

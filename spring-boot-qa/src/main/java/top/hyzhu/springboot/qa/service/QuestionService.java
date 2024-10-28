@@ -5,6 +5,9 @@ import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import top.hyzhu.springboot.qa.entity.Question;
 import top.hyzhu.springboot.qa.mapper.QuestionMapper;
+
+import java.util.List;
+
 /**
  * @Author: zhy
  * @Description:
@@ -23,5 +26,9 @@ public class QuestionService extends ServiceImpl<QuestionMapper, Question> {
         return questionMapper.getQuestionWithUser(id);
     }
 
+    // 获取所有问题及其提问者信息
+    public List<Question> getAllQuestionsWithUsers() {
+        return questionMapper.getAllQuestionsWithUsers();
+    }
 
 }

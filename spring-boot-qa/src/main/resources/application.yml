@@ -16,8 +16,6 @@ spring:
           min-idle: 10 # 连接池中的最⼤空闲连接 默认 8
           max-idle: 20 # 连接池中的最⼩空闲连接 默认 0
           max-active: 100 # 连接池最⼤连接数（使⽤负值表示没有限制） 默认 8
-
-# 配置 MP 框架⽇志级别
 logging:
   level:
     com.baomidou.mybatisplus.samples: debug

@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.*;
 import top.hyzhu.springboot.qa.entity.Question;
 
+import java.util.List;
+
 /**
  * @Author: zhy
  * @Description:
@@ -19,4 +21,14 @@ public interface QuestionMapper extends BaseMapper<Question> {
                     one = @One(select = "top.hyzhu.springboot.qa.mapper.UserMapper.selectById"))
     })
     Question getQuestionWithUser(Long id);
+
+    // 获取所有问题及提问者信息
+    @Select("SELECT q.*, u.username, u.avatar FROM question q LEFT JOIN user u ON q.user_id = u.id")
+    @Results({
+            @Result(property = "user", column = "user_id",
+                    one = @One(select = "top.hyzhu.springboot.qa.mapper.UserMapper.selectById"))
+    })
+    List<Question> getAllQuestionsWithUsers();
+
+
 }
