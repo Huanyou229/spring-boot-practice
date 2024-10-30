@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
  * @Date: 2024-10-28 15:45
  **/
 
-@Component
+//@Component
 @AllArgsConstructor
 @Slf4j
 public class DailyReportTask {

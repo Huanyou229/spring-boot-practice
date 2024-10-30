@@ -1,11 +1,11 @@
-package top.hyzhu.springboot.configure.util;
+package top.hyzhu.springboot.file.utils;
 
 import com.aliyun.oss.OSS;
 import com.aliyun.oss.OSSClientBuilder;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
-import top.hyzhu.springboot.configure.config.OssConfig;
+import top.hyzhu.springboot.file.config.OssConfig;
 import java.io.IOException;
 import java.io.InputStream;
 

@@ -9,3 +9,4 @@
 - spring-boot-mp: MyBatis Plus 的学习
 - spring-boot-exception: 全局统一异常处理的学习
 - spring-boot-task: 定时任务学习
+- spring-boot-file: 整合分布式文件系统

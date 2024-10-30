@@ -10,7 +10,7 @@ import top.hyzhu.springboot.task.jobs.ExportJob;
  * @Description:
  * @Date: 2024-10-28 16:02
  **/
-//@Configuration
+@Configuration
 public class ExportQuartzConfig {
     @Bean
     public JobDetail jobDetail(){

@@ -18,16 +18,16 @@ import java.util.UUID;
  * @Description:
  * @Date: 2024-10-28 16:25
  **/
-//@Slf4j
-//@AllArgsConstructor
+@Slf4j
+@AllArgsConstructor
 
-//public class ExportJob extends QuartzJobBean {
-//    private final StudentMapper studentMapper;
-//    @Override
-//    protected void executeInternal(JobExecutionContext context) throws JobExecutionException {
-//        log.info("开始执行导出任务！");
-//        List<Student> students = studentMapper.selectList(null);
-//        String fileName = "/C:/Users/Huany/Desktop/export/"+ UUID.randomUUID()+".xlsx";
-//        EasyExcel.write(fileName, Student.class).sheet("学生信息").doWrite(()-> students);
-//    }
-//}
+public class ExportJob extends QuartzJobBean {
+    private final StudentMapper studentMapper;
+    @Override
+    protected void executeInternal(JobExecutionContext context) throws JobExecutionException {
+        log.info("开始执行导出任务！");
+        List<Student> students = studentMapper.selectList(null);
+        String fileName = "/C:/Users/Huany/Desktop/export/"+ UUID.randomUUID()+".xlsx";
+        EasyExcel.write(fileName, Student.class).sheet("学生信息").doWrite(()-> students);
+    }
+}

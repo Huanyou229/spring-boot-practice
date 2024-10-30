@@ -10,4 +10,5 @@ import top.hyzhu.springboot.task.entity.EmailLog;
  * @Date: 2024-10-28 15:36
  **/
 public interface EmailLogMapper extends BaseMapper<EmailLog> {
+
 }
