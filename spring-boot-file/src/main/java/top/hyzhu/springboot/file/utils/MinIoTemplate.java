@@ -78,6 +78,7 @@ public class MinIoTemplate {
         client.putObject(PutObjectArgs.builder()
                 .bucket(bucketName)
                 .object(objectName)
+//                        设置输入流，其中-1表示不限制流的大小，1048784784是流的长度（字节）
                 .stream(inputStream, -1, 1048784784)
                 .build());
         return endPoint + "/" + bucketName + "/" + objectName;

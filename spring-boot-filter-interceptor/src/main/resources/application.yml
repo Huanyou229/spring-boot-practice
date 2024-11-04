@@ -1,0 +1,17 @@
+logging:
+  file:
+    name: ./logs/upload
+  logback:
+    rolling policy:
+      max-file-size: 5MB
+      max-history: 30
+  pattern:
+    console: '%yellow(%d{HH:mm:ss}) - %cyan(%msg%n)'
+    file: '%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger : %msg%n'
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 200MB # 单个⽂件上传⼤⼩
+      max-request-size: 200MB # ⼀次请求上传⽂件⼤⼩

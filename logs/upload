@@ -1,0 +1,487 @@
+2024-11-04 18:59:46.323 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Starting FilterInterceptorApplication using Java 17.0.9 with PID 16580 (E:\Projects\spring-boot-practice\spring-boot-filter-interceptor\target\classes started by Huany in E:\Projects\spring-boot-practice)
+2024-11-04 18:59:46.324 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-04 18:59:46.360 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-04 18:59:46.360 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-04 18:59:47.062 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-11-04 18:59:47.064 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2024-11-04 18:59:47.068 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-11-04 18:59:47.076 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-11-04 18:59:47.076 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-04 18:59:47.110 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-11-04 18:59:47.111 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 749 ms
+2024-11-04 18:59:47.152 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter init
+2024-11-04 18:59:47.584 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-11-04 18:59:47.610 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/'
+2024-11-04 18:59:47.618 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Started FilterInterceptorApplication in 1.612 seconds (process running for 2.035)
+2024-11-04 18:59:53.061 INFO  [http-nio-8080-exec-5] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-04 18:59:53.061 INFO  [http-nio-8080-exec-5] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-11-04 18:59:53.062 INFO  [http-nio-8080-exec-5] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 1 ms
+2024-11-04 18:59:53.096 INFO  [http-nio-8080-exec-5] top.hyzhu.springboot.filter_interceptor.interceptor.LoggingInterceptor : 请求已经到达拦截器：path:/upload,clientIp=0:0:0:0:0:0:0:1,beginTime=2024-11-04T18:59:53.096452800
+2024-11-04 18:59:53.599 INFO  [http-nio-8080-exec-5] top.hyzhu.springboot.filter_interceptor.utils.OssUtil : 文件上传成功: 原始名称: 超A.jpg, 新文件名: c43c2200-6e3f-4643-884b-41cb52bc2af6_超A.jpg, 大小: 100437 bytes, 上传时间: Mon Nov 04 18:59:53 GMT+08:00 2024
+2024-11-04 18:59:53.625 INFO  [http-nio-8080-exec-5] top.hyzhu.springboot.filter_interceptor.interceptor.UploadInterceptor : 拦截器响应处理完毕：path:/upload, endTime=2024-11-04T18:59:53.625655300
+2024-11-04 18:59:53.625 INFO  [http-nio-8080-exec-5] top.hyzhu.springboot.filter_interceptor.interceptor.LoggingInterceptor : 拦载器响应处理完毕：path:{),endTime={)
+2024-11-04 19:03:19.408 INFO  [SpringApplicationShutdownHook] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter destroy
+2024-11-04 19:03:22.481 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Starting FilterInterceptorApplication using Java 17.0.9 with PID 28588 (E:\Projects\spring-boot-practice\spring-boot-filter-interceptor\target\classes started by Huany in E:\Projects\spring-boot-practice)
+2024-11-04 19:03:22.483 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-04 19:03:22.519 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-04 19:03:22.519 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-04 19:03:23.219 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-11-04 19:03:23.222 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2024-11-04 19:03:23.225 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-11-04 19:03:23.233 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-11-04 19:03:23.233 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-04 19:03:23.278 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-11-04 19:03:23.278 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 759 ms
+2024-11-04 19:03:23.320 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter init
+2024-11-04 19:03:23.705 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-11-04 19:03:23.733 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/'
+2024-11-04 19:03:23.741 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Started FilterInterceptorApplication in 1.57 seconds (process running for 2.012)
+2024-11-04 19:03:30.694 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-04 19:03:30.694 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-11-04 19:03:30.695 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 1 ms
+2024-11-04 19:03:30.727 INFO  [http-nio-8080-exec-1] top.hyzhu.springboot.filter_interceptor.interceptor.LoggingInterceptor : 请求已经到达拦截器：path:/upload,clientIp=0:0:0:0:0:0:0:1,beginTime=2024-11-04T19:03:30.727235700
+2024-11-04 19:03:31.136 INFO  [http-nio-8080-exec-1] top.hyzhu.springboot.filter_interceptor.utils.OssUtil : 文件上传成功: 原始名称: 超A.jpg, 新文件名: 7d8a3c43-f2de-4f88-9b2f-0c4366b62a84_超A.jpg, 大小: 100437 bytes, 上传时间: Mon Nov 04 19:03:31 GMT+08:00 2024
+2024-11-04 19:03:31.158 INFO  [http-nio-8080-exec-1] top.hyzhu.springboot.filter_interceptor.interceptor.LoggingInterceptor : 拦载器响应处理完毕：path:/upload,endTime=2024-11-04T19:03:31.158815400
+2024-11-04 19:09:45.275 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-11-04 19:09:45.653 INFO  [Thread-5] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter destroy
+2024-11-04 19:09:45.713 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Starting FilterInterceptorApplication using Java 17.0.9 with PID 28588 (E:\Projects\spring-boot-practice\spring-boot-filter-interceptor\target\classes started by Huany in E:\Projects\spring-boot-practice)
+2024-11-04 19:09:45.713 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-04 19:09:45.893 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-11-04 19:09:45.894 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2024-11-04 19:09:45.895 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-11-04 19:09:45.895 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-11-04 19:09:45.896 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-04 19:09:45.909 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-11-04 19:09:45.909 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 194 ms
+2024-11-04 19:09:45.916 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter init
+2024-11-04 19:09:45.922 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testController': Resolution of declared constructors on bean Class [top.hyzhu.springboot.filter_interceptor.controller.TestController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@cb94dda] failed
+2024-11-04 19:09:45.923 INFO  [restartedMain] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2024-11-04 19:09:45.923 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter destroy
+2024-11-04 19:09:45.929 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-04 19:09:45.953 ERROR [restartedMain] org.springframework.boot.SpringApplication : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testController': Resolution of declared constructors on bean Class [top.hyzhu.springboot.filter_interceptor.controller.TestController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@cb94dda] failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:384) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1314) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1209) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
+	at top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication.main(FilterInterceptorApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.3.jar:3.3.3]
+Caused by: java.lang.NoClassDefFoundError: top/hyzhu/springboot/filter_interceptor/utils/OssUtil
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3373) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2555) ~[na:na]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:379) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 23 common frames omitted
+Caused by: java.lang.ClassNotFoundException: top.hyzhu.springboot.filter_interceptor.utils.OssUtil
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.3.3.jar:3.3.3]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 27 common frames omitted
+2024-11-04 19:09:48.432 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Starting FilterInterceptorApplication using Java 17.0.9 with PID 28588 (E:\Projects\spring-boot-practice\spring-boot-filter-interceptor\target\classes started by Huany in E:\Projects\spring-boot-practice)
+2024-11-04 19:09:48.433 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-04 19:09:49.587 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-11-04 19:09:49.589 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2024-11-04 19:09:49.590 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-11-04 19:09:49.591 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-11-04 19:09:49.591 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-04 19:09:49.625 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-11-04 19:09:49.626 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1190 ms
+2024-11-04 19:09:49.646 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter init
+2024-11-04 19:09:49.858 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-11-04 19:09:49.878 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/'
+2024-11-04 19:09:49.886 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Started FilterInterceptorApplication in 1.492 seconds (process running for 388.156)
+2024-11-04 19:09:49.889 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-04 19:11:13.111 INFO  [http-nio-8080-exec-3] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-04 19:11:13.111 INFO  [http-nio-8080-exec-3] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-11-04 19:11:13.112 INFO  [http-nio-8080-exec-3] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 1 ms
+2024-11-04 19:11:13.120 INFO  [http-nio-8080-exec-3] top.hyzhu.springboot.filter_interceptor.interceptor.LoggingInterceptor : 请求已经到达拦截器：path:/upload,clientIp=0:0:0:0:0:0:0:1,beginTime=2024-11-04T19:11:13.120527600
+2024-11-04 19:11:35.485 INFO  [http-nio-8080-exec-2] top.hyzhu.springboot.filter_interceptor.interceptor.LoggingInterceptor : 请求已经到达拦截器：path:/upload,clientIp=0:0:0:0:0:0:0:1,beginTime=2024-11-04T19:11:35.485163100
+2024-11-04 19:11:43.033 INFO  [http-nio-8080-exec-4] top.hyzhu.springboot.filter_interceptor.interceptor.LoggingInterceptor : 请求已经到达拦截器：path:/upload,clientIp=0:0:0:0:0:0:0:1,beginTime=2024-11-04T19:11:43.033745500
+2024-11-04 19:12:00.808 INFO  [SpringApplicationShutdownHook] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter destroy
+2024-11-04 19:12:03.661 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Starting FilterInterceptorApplication using Java 17.0.9 with PID 29076 (E:\Projects\spring-boot-practice\spring-boot-filter-interceptor\target\classes started by Huany in E:\Projects\spring-boot-practice)
+2024-11-04 19:12:03.663 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-04 19:12:03.712 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-04 19:12:03.713 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-04 19:12:04.683 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-11-04 19:12:04.687 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2024-11-04 19:12:04.693 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-11-04 19:12:04.709 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-11-04 19:12:04.709 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-04 19:12:04.769 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-11-04 19:12:04.769 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1056 ms
+2024-11-04 19:12:04.834 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter init
+2024-11-04 19:12:05.523 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-11-04 19:12:05.561 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/'
+2024-11-04 19:12:05.572 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Started FilterInterceptorApplication in 2.357 seconds (process running for 3.008)
+2024-11-04 19:12:12.444 INFO  [http-nio-8080-exec-4] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-04 19:12:12.444 INFO  [http-nio-8080-exec-4] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-11-04 19:12:12.446 INFO  [http-nio-8080-exec-4] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 1 ms
+2024-11-04 19:12:16.040 INFO  [http-nio-8080-exec-4] top.hyzhu.springboot.filter_interceptor.interceptor.LoggingInterceptor : 请求已经到达拦截器：path:/upload,clientIp=0:0:0:0:0:0:0:1,beginTime=2024-11-04T19:12:16.040638600
+2024-11-04 19:13:00.502 INFO  [http-nio-8080-exec-6] top.hyzhu.springboot.filter_interceptor.interceptor.LoggingInterceptor : 请求已经到达拦截器：path:/upload,clientIp=0:0:0:0:0:0:0:1,beginTime=2024-11-04T19:13:00.502207100
+2024-11-04 19:13:20.617 INFO  [http-nio-8080-exec-5] top.hyzhu.springboot.filter_interceptor.interceptor.LoggingInterceptor : 请求已经到达拦截器：path:/upload,clientIp=0:0:0:0:0:0:0:1,beginTime=2024-11-04T19:13:20.617021500
+2024-11-04 19:13:35.617 INFO  [http-nio-8080-exec-3] top.hyzhu.springboot.filter_interceptor.interceptor.LoggingInterceptor : 请求已经到达拦截器：path:/upload,clientIp=0:0:0:0:0:0:0:1,beginTime=2024-11-04T19:13:35.617752500
+2024-11-04 19:13:57.061 INFO  [http-nio-8080-exec-2] top.hyzhu.springboot.filter_interceptor.interceptor.LoggingInterceptor : 请求已经到达拦截器：path:/upload,clientIp=0:0:0:0:0:0:0:1,beginTime=2024-11-04T19:13:57.061561100
+2024-11-04 19:13:57.611 INFO  [http-nio-8080-exec-2] top.hyzhu.springboot.filter_interceptor.utils.OssUtil : 文件上传成功: 原始名称: 超A.jpg, 新文件名: 342e7a69-7456-4822-9ffa-38b175c061ca_超A.jpg, 大小: 100437 bytes, 上传时间: Mon Nov 04 19:13:57 GMT+08:00 2024
+2024-11-04 19:13:57.656 INFO  [http-nio-8080-exec-2] top.hyzhu.springboot.filter_interceptor.interceptor.LoggingInterceptor : 拦载器响应处理完毕：path:/upload,endTime=2024-11-04T19:13:57.656483700
+2024-11-04 19:14:46.836 INFO  [SpringApplicationShutdownHook] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter destroy
+2024-11-04 19:47:26.063 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Starting FilterInterceptorApplication using Java 17.0.9 with PID 31856 (E:\Projects\spring-boot-practice\spring-boot-filter-interceptor\target\classes started by Huany in E:\Projects\spring-boot-practice)
+2024-11-04 19:47:26.066 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-04 19:47:26.119 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-04 19:47:26.119 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-04 19:47:27.371 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-11-04 19:47:27.376 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2024-11-04 19:47:27.399 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-11-04 19:47:27.414 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-11-04 19:47:27.415 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-04 19:47:27.479 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-11-04 19:47:27.479 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1360 ms
+2024-11-04 19:47:27.548 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter init
+2024-11-04 19:47:28.236 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-11-04 19:47:28.280 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/'
+2024-11-04 19:47:28.293 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Started FilterInterceptorApplication in 2.793 seconds (process running for 3.55)
+2024-11-04 19:49:20.592 INFO  [SpringApplicationShutdownHook] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter destroy
+2024-11-04 19:49:26.926 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Starting FilterInterceptorApplication using Java 17.0.9 with PID 23868 (E:\Projects\spring-boot-practice\spring-boot-filter-interceptor\target\classes started by Huany in E:\Projects\spring-boot-practice)
+2024-11-04 19:49:26.929 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-04 19:49:26.998 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-04 19:49:26.999 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-04 19:49:28.211 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-11-04 19:49:28.215 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2024-11-04 19:49:28.219 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-11-04 19:49:28.232 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-11-04 19:49:28.232 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-04 19:49:28.283 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-11-04 19:49:28.283 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1283 ms
+2024-11-04 19:49:28.351 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter init
+2024-11-04 19:49:28.943 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-11-04 19:49:28.981 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/'
+2024-11-04 19:49:28.992 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Started FilterInterceptorApplication in 2.539 seconds (process running for 3.198)
+2024-11-04 19:50:16.411 INFO  [SpringApplicationShutdownHook] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter destroy
+2024-11-04 19:50:24.485 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Starting FilterInterceptorApplication using Java 17.0.9 with PID 2464 (E:\Projects\spring-boot-practice\spring-boot-filter-interceptor\target\classes started by Huany in E:\Projects\spring-boot-practice)
+2024-11-04 19:50:24.487 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-04 19:50:24.521 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-04 19:50:24.521 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-04 19:50:25.211 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-11-04 19:50:25.213 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2024-11-04 19:50:25.217 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-11-04 19:50:25.225 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-11-04 19:50:25.225 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-04 19:50:25.266 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-11-04 19:50:25.266 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 744 ms
+2024-11-04 19:50:25.305 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter init
+2024-11-04 19:50:25.675 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-11-04 19:50:25.705 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/'
+2024-11-04 19:50:25.712 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Started FilterInterceptorApplication in 1.542 seconds (process running for 1.983)
+2024-11-04 19:51:06.672 INFO  [SpringApplicationShutdownHook] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter destroy
+2024-11-04 19:59:39.706 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Starting FilterInterceptorApplication using Java 17.0.9 with PID 26560 (E:\Projects\spring-boot-practice\spring-boot-filter-interceptor\target\classes started by Huany in E:\Projects\spring-boot-practice)
+2024-11-04 19:59:39.707 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-04 19:59:39.743 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-04 19:59:39.743 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-04 19:59:40.416 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-11-04 19:59:40.418 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2024-11-04 19:59:40.422 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-11-04 19:59:40.430 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-11-04 19:59:40.430 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-04 19:59:40.465 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-11-04 19:59:40.465 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 722 ms
+2024-11-04 19:59:40.510 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter init
+2024-11-04 19:59:40.533 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController' defined in file [E:\Projects\spring-boot-practice\spring-boot-filter-interceptor\target\classes\top\hyzhu\springboot\filter_interceptor\controller\TestController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ossUtil': Injection of resource dependencies failed
+2024-11-04 19:59:40.535 INFO  [restartedMain] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2024-11-04 19:59:40.536 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter destroy
+2024-11-04 19:59:40.545 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-04 19:59:40.561 ERROR [restartedMain] org.springframework.boot.SpringApplication : Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController' defined in file [E:\Projects\spring-boot-practice\spring-boot-filter-interceptor\target\classes\top\hyzhu\springboot\filter_interceptor\controller\TestController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ossUtil': Injection of resource dependencies failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication.main(FilterInterceptorApplication.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ossUtil': Injection of resource dependencies failed
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:371)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ossClient' defined in class path resource [top/hyzhu/springboot/filter_interceptor/config/OssConfig.class]: Failed to instantiate [com.aliyun.oss.OSS]: Factory method 'ossClient' threw exception with message: Access key id should not be null or empty.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:605)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:576)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:738)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:270)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:368)
+	... 36 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.aliyun.oss.OSS]: Factory method 'ossClient' threw exception with message: Access key id should not be null or empty.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:178)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 52 common frames omitted
+Caused by: com.aliyun.oss.common.auth.InvalidCredentialsException: Access key id should not be null or empty.
+	at com.aliyun.oss.common.auth.DefaultCredentialProvider.checkCredentials(DefaultCredentialProvider.java:63)
+	at com.aliyun.oss.common.auth.DefaultCredentialProvider.<init>(DefaultCredentialProvider.java:38)
+	at com.aliyun.oss.common.auth.DefaultCredentialProvider.<init>(DefaultCredentialProvider.java:34)
+	at com.aliyun.oss.OSSClientBuilder.getDefaultCredentialProvider(OSSClientBuilder.java:83)
+	at com.aliyun.oss.OSSClientBuilder.build(OSSClientBuilder.java:38)
+	at top.hyzhu.springboot.filter_interceptor.config.OssConfig.ossClient(OssConfig.java:32)
+	at top.hyzhu.springboot.filter_interceptor.config.OssConfig$$SpringCGLIB$$0.CGLIB$ossClient$9(<generated>)
+	at top.hyzhu.springboot.filter_interceptor.config.OssConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:348)
+	at top.hyzhu.springboot.filter_interceptor.config.OssConfig$$SpringCGLIB$$0.ossClient(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146)
+	... 53 common frames omitted
+2024-11-04 20:04:42.293 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Starting FilterInterceptorApplication using Java 17.0.9 with PID 3540 (E:\Projects\spring-boot-practice\spring-boot-filter-interceptor\target\classes started by Huany in E:\Projects\spring-boot-practice)
+2024-11-04 20:04:42.295 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-04 20:04:42.329 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-04 20:04:42.330 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-04 20:04:43.061 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-11-04 20:04:43.064 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2024-11-04 20:04:43.068 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-11-04 20:04:43.076 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-11-04 20:04:43.076 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-04 20:04:43.112 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-11-04 20:04:43.112 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 782 ms
+2024-11-04 20:04:43.155 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter init
+2024-11-04 20:04:43.165 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ossClientConfig': Injection of autowired dependencies failed
+2024-11-04 20:04:43.167 INFO  [restartedMain] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2024-11-04 20:04:43.168 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter destroy
+2024-11-04 20:04:43.177 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-04 20:04:43.192 ERROR [restartedMain] org.springframework.boot.SpringApplication : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ossClientConfig': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:515)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication.main(FilterInterceptorApplication.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'aliyun.oss.endpoint' in value "${aliyun.oss.endpoint}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:964)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	... 22 common frames omitted
+2024-11-04 20:08:37.843 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Starting FilterInterceptorApplication using Java 17.0.9 with PID 30772 (E:\Projects\spring-boot-practice\spring-boot-filter-interceptor\target\classes started by Huany in E:\Projects\spring-boot-practice)
+2024-11-04 20:08:37.846 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-04 20:08:37.897 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-04 20:08:37.897 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-04 20:08:38.698 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-11-04 20:08:38.700 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2024-11-04 20:08:38.715 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-11-04 20:08:38.724 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-11-04 20:08:38.724 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-04 20:08:38.765 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-11-04 20:08:38.766 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 868 ms
+2024-11-04 20:08:38.810 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter init
+2024-11-04 20:08:38.820 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ossClientConfig': Injection of autowired dependencies failed
+2024-11-04 20:08:38.822 INFO  [restartedMain] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2024-11-04 20:08:38.823 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter destroy
+2024-11-04 20:08:38.834 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-04 20:08:38.851 ERROR [restartedMain] org.springframework.boot.SpringApplication : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ossClientConfig': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:515)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication.main(FilterInterceptorApplication.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'aliyun.oss.endpoint' in value "${aliyun.oss.endpoint}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:964)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	... 22 common frames omitted
+2024-11-04 20:10:23.409 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Starting FilterInterceptorApplication using Java 17.0.9 with PID 30316 (E:\Projects\spring-boot-practice\spring-boot-filter-interceptor\target\classes started by Huany in E:\Projects\spring-boot-practice)
+2024-11-04 20:10:23.411 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-04 20:10:23.445 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-04 20:10:23.445 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-04 20:10:24.115 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-11-04 20:10:24.117 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2024-11-04 20:10:24.121 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-11-04 20:10:24.129 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-11-04 20:10:24.129 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-04 20:10:24.177 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-11-04 20:10:24.177 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 732 ms
+2024-11-04 20:10:24.219 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter init
+2024-11-04 20:10:24.237 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController' defined in file [E:\Projects\spring-boot-practice\spring-boot-filter-interceptor\target\classes\top\hyzhu\springboot\filter_interceptor\controller\TestController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ossUtil': Injection of resource dependencies failed
+2024-11-04 20:10:24.239 INFO  [restartedMain] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2024-11-04 20:10:24.240 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter destroy
+2024-11-04 20:10:24.250 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-04 20:10:24.267 ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in top.hyzhu.springboot.filter_interceptor.controller.TestController required a bean of type 'com.aliyun.oss.OSS' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.aliyun.oss.OSS' in your configuration.
+
+2024-11-04 20:13:32.091 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Starting FilterInterceptorApplication using Java 17.0.9 with PID 15176 (E:\Projects\spring-boot-practice\spring-boot-filter-interceptor\target\classes started by Huany in E:\Projects\spring-boot-practice)
+2024-11-04 20:13:32.093 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-04 20:13:32.129 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-04 20:13:32.130 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-04 20:13:32.860 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-11-04 20:13:32.867 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2024-11-04 20:13:32.871 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-11-04 20:13:32.880 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-11-04 20:13:32.881 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-04 20:13:32.938 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-11-04 20:13:32.938 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 808 ms
+2024-11-04 20:13:32.986 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter init
+2024-11-04 20:13:33.497 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-11-04 20:13:33.526 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/'
+2024-11-04 20:13:33.533 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Started FilterInterceptorApplication in 1.759 seconds (process running for 2.195)
+2024-11-04 20:13:57.326 INFO  [SpringApplicationShutdownHook] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter destroy
+2024-11-04 20:20:10.358 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Starting FilterInterceptorApplication using Java 17.0.9 with PID 4672 (E:\Projects\spring-boot-practice\spring-boot-filter-interceptor\target\classes started by Huany in E:\Projects\spring-boot-practice)
+2024-11-04 20:20:10.361 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-04 20:20:10.411 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-04 20:20:10.412 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-04 20:20:11.484 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-11-04 20:20:11.488 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2024-11-04 20:20:11.508 INFO  [restartedMain] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-11-04 20:20:11.522 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-11-04 20:20:11.522 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-11-04 20:20:11.568 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-11-04 20:20:11.568 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1156 ms
+2024-11-04 20:20:11.631 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter init
+2024-11-04 20:20:12.138 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-11-04 20:20:12.167 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/'
+2024-11-04 20:20:12.175 INFO  [restartedMain] top.hyzhu.springboot.filter_interceptor.FilterInterceptorApplication : Started FilterInterceptorApplication in 2.257 seconds (process running for 3.054)
+2024-11-04 20:20:29.523 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-04 20:20:29.523 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-11-04 20:20:29.524 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 1 ms
+2024-11-04 20:20:29.558 WARN  [http-nio-8080-exec-2] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-04 20:20:29.571 INFO  [http-nio-8080-exec-2] top.hyzhu.springboot.filter_interceptor.interceptor.LoggingInterceptor : 请求已经到达拦截器：path:/error,clientIp=0:0:0:0:0:0:0:1,beginTime=2024-11-04T20:20:29.571026500
+2024-11-04 20:20:29.640 INFO  [http-nio-8080-exec-2] top.hyzhu.springboot.filter_interceptor.interceptor.LoggingInterceptor : 拦载器响应处理完毕：path:/error,endTime=2024-11-04T20:20:29.640426300
+2024-11-04 20:20:38.622 INFO  [http-nio-8080-exec-7] top.hyzhu.springboot.filter_interceptor.interceptor.LoggingInterceptor : 请求已经到达拦截器：path:/upload,clientIp=0:0:0:0:0:0:0:1,beginTime=2024-11-04T20:20:38.621028300
+2024-11-04 20:20:39.299 INFO  [http-nio-8080-exec-7] top.hyzhu.springboot.filter_interceptor.utils.OssUtil : 文件上传成功: 原始名称: 超A.jpg, 新文件名: f07c6d11-a4c6-4c71-8db4-7cda10371c3f_超A.jpg, 大小: 100437 bytes, 上传时间: Mon Nov 04 20:20:39 GMT+08:00 2024
+2024-11-04 20:20:39.304 INFO  [http-nio-8080-exec-7] top.hyzhu.springboot.filter_interceptor.interceptor.LoggingInterceptor : 拦载器响应处理完毕：path:/upload,endTime=2024-11-04T20:20:39.304854800
+2024-11-04 20:20:59.566 INFO  [SpringApplicationShutdownHook] top.hyzhu.springboot.filter_interceptor.filter.CorsFilter : CorsFilter destroy
